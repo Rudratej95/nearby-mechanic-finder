@@ -11,7 +11,7 @@ const sosRoutes = require('./routes/sos');
 const app = express();
 
 // ─── Middleware ───────────────────────────────────────────
-app.use(cors());
+app.use(cors()); // In production, consider restricting to the frontend URL
 app.use(express.json());
 
 // ─── Routes ──────────────────────────────────────────────
