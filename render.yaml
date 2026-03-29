@@ -22,7 +22,7 @@ services:
     name: nearby-mechanic-finder-ui
     runtime: static
     plan: free
-    rootDir: frontend
+    # No rootDir here because frontend is now in the root
     buildCommand: npm install && npm run build
     publishDir: dist
     envVars:
